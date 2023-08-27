@@ -1,0 +1,123 @@
+@use "../../scss/mixins/media";
+@use "../../scss/variables";
+
+/* base styling for our button */
+.button {
+  background: variables.$dark_charcoal;
+  border: 1px solid variables.$dark_charcoal;
+  color: variables.$white;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 3px;
+  transition: all 0.3s;
+}
+
+.primary {
+  background: variables.$dark_charcoal;
+  border: 1px solid variables.$dark_charcoal;
+  color: variables.$white;
+}
+
+.primary:hover {
+  background-color: variables.$eerie_black;
+  border: 1px solid variables.$eerie_black;
+}
+
+.danger {
+  background: variables.$vermilion;
+  border: 1px solid variables.$vermilion;
+  color: variables.$white;
+}
+
+.success {
+  background: #008060;
+  border: 1px solid variables.$spanish_viridian;
+  color: variables.$white;
+}
+
+.warning {
+  background: variables.$maize;
+  border: 1px solid variables.$maize;
+  color: variables.$white;
+}
+
+.disabled {
+  background: variables.$light_gray_2 !important;
+  border: 1px solid variables.$light_gray_2;
+  color: variables.$dark_charcoal;
+}
+
+/* size */
+.button_sm {
+  height: 28px;
+  padding: 0px 16px;
+}
+
+.button_md {
+  height: 32px;
+  padding: 0px 20px;
+}
+
+.button_lg {
+  height: 36px;
+  padding: 0px 24px;
+}
+
+/* display */
+.block {
+  display: flex;
+  width: 100%;
+}
+
+.inline_block {
+  display: inline-flex;
+  width: auto;
+}
+
+/* type */
+.outline {
+  background: variables.$white;
+  color: variables.$dark_charcoal;
+  border: 1px solid variables.$silver_sand;
+}
+
+.text {
+  background: transparent;
+  border: none;
+  color: variables.$dark_charcoal;
+  display: inline-flex;
+  width: auto;
+  box-shadow: none !important;
+}
+
+/* shadow */
+.isPressed {
+  box-shadow: variables.$button_shadow;
+}
+
+/* loading */
+.loading {
+  background: variables.$light_gray_2;
+  border: 1px solid variables.$light_gray_2;
+  padding: 0px 30px;
+  box-sizing: border-box;
+}
+
+@include media.responsive(tablet) {
+  /* size */
+  .button_sm {
+    height: 32px;
+    padding: 0px 16px;
+  }
+
+  .button_md {
+    height: 36px;
+    padding: 0px 20px;
+  }
+
+  .button_lg {
+    height: 40px;
+    padding: 0px 24px;
+  }
+}

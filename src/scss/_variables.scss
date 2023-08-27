@@ -1,0 +1,92 @@
+/*=============================================
+=                 #Variables                  =
+=============================================*/
+
+/**
+* Tables of content
+*
+* COLORS
+* Brand colors ............................................ These are the main brand color. This is call primary color.
+* Natural colors........................................... These are the natural color. Without primary and utility colors.
+* Utility colors........................................... These are the natural color. Without primary and utility colors. like -> error, alert, link.
+* 
+* TYPOGRAPHY
+* Font families............................................ Which font family use in this design system.
+* Font weights.............................................  Which font weight use in this design system.
+* Sizes.................................................... These font sizes are used for body like paragraph, input, label etc
+* Heading font sizes....................................... These font sizes are used for page and section heading.
+* 
+* BREAKPOINT
+* Breakpoint............................................... Global breakpoints
+* 
+* SPACING
+* Space.................................................... The fixed space are defined here 
+* 
+* 
+* 
+* 
+* 
+**/
+
+
+
+/*=============================================
+=                   #Colors                   =
+=============================================*/
+
+/*  #__brand color__ */
+$primary_color: #0DA5FB;
+
+
+/*  #__Natural colors__ */
+$white: #ffffff;
+$dark_charcoal: #303030;
+$philippine_silver: #B9B3AE;
+$granite_gray: #616161;
+$nickel: #6D7175;
+$eerie_black: #1A1A1A;
+$light_gray_2: #D4D4D4;
+$silver_sand:#C3BEBA;
+
+
+
+/*  #__Utility color__ */
+$spanish_viridian:#008060;
+$vermilion : #D82C0D;
+$maize:#FFC453;
+$light_gray: #D2D5D8;
+$philippine_gray: #8C9196;
+$lavender_blush : #FFF4F4;
+
+
+
+/*=============================================
+=                 #Typography                 =
+=============================================*/
+/*  #__font family__ */
+$inter: 'Inter', sans-serif;
+
+
+/*  #__font sizes__ */
+$fs_xxsm: 12px;
+$fs_xsm: 13px;
+$fs_sm: 16px;
+$fs_md: 18px;
+$fs_lg: 20px;
+$fs_xlg: 24px;
+$fs_xxlg: 28px;
+
+
+
+/* #___Font Weights___# */
+$fw_regular:400;
+$fw_medium:500;
+$fw_semiBold:600;
+$fw_bold:700;
+
+
+/*=============================================
+=                 #Typography                 =
+=============================================*/
+/*  #__Shadow__ */
+$button_shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.30) inset, 0px 1px 0px 0px rgba(0, 0, 0, 0.08);

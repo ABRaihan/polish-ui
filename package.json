@@ -1,0 +1,73 @@
+{
+  "name": "polish-ui",
+  "version": "1.0.0",
+  "description": "PolishUI, a React component library built for beauty and ease of use, makes it simple to create polished and modern user interfaces.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ABRaihan/polish-ui.git"
+  },
+  "keywords": [
+    "react",
+    "component",
+    "library",
+    "ui",
+    "polished"
+  ],
+  "author": "A. B. Raihan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ABRaihan/polish-ui/issues"
+  },
+  "homepage": "https://github.com/ABRaihan/polish-ui#readme",
+  "files": [
+    "lib/**/*"
+  ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "lib": "rollup -c --bundleConfigAsCjs",
+    "preview": "vite preview",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.3",
+    "@storybook/addon-essentials": "7.3.2",
+    "@storybook/addon-interactions": "7.3.2",
+    "@storybook/addon-links": "7.3.2",
+    "@storybook/addon-onboarding": "1.0.8",
+    "@storybook/blocks": "7.3.2",
+    "@storybook/react": "7.3.2",
+    "@storybook/react-vite": "7.3.2",
+    "@storybook/testing-library": "0.2.0",
+    "@types/node": "^20.5.1",
+    "@types/react": "^18.2.20",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@vitejs/plugin-react": "^4.0.3",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "eslint-plugin-storybook": "^0.6.13",
+    "postcss": "^8.4.28",
+    "postcss-modules": "^6.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rollup": "^3.28.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-typescript2": "^0.35.0",
+    "sass": "^1.66.1",
+    "storybook": "7.3.2",
+    "typescript": "^5.1.6",
+    "vite": "^4.4.5"
+  },
+  "peerDependencies": {
+    "react": "^16.14.0 || ^17.0.0 || ^18.2.0",
+    "react-dom": "^16.14.0 || ^17.0.0 || ^18.2.0"
+  }
+}
