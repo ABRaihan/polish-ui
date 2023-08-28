@@ -1,13 +1,9 @@
-import React from 'react'
-import style from "./spinner.module.scss"
-interface SpinnerProps {
-  size: "sm" | "md" | "lg";
-}
+import React from "react";
+import { SpinnerProps } from "./SpinnerTypes";
+import style from "./spinner.module.scss";
 
 const Spinner: React.FC<SpinnerProps> = () => {
-  return (
-    <span className={style.spinner}></span>
-  )
-}
+  return <span className={style.spinner}></span>;
+};
 
 export default Spinner;

@@ -20,7 +20,9 @@
       "@utils": ["./utils"],
       "@utils/*": ["./utils/*"],
       "@scss": ["./scss"],
-      "@scss/*": ["./scss/*"]
+      "@scss/*": ["./scss/*"],
+      "@assets": ["./assets"],
+      "@assets/*": ["./assets/*"]
     }
   },
   "include": ["src"],

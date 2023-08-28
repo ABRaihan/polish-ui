@@ -1,11 +1,11 @@
-@use "../../scss/mixins/media";
-@use "../../scss/variables";
+@import "../../scss/mixins/media";
+@import "../../scss/variables";
 
 /* base styling for our button */
 .button {
-  background: variables.$dark_charcoal;
-  border: 1px solid variables.$dark_charcoal;
-  color: variables.$white;
+  background: $dark_charcoal;
+  border: 1px solid $dark_charcoal;
+  color: $white;
   align-items: center;
   justify-content: center;
   gap: 8px;
@@ -14,38 +14,38 @@
 }
 
 .primary {
-  background: variables.$dark_charcoal;
-  border: 1px solid variables.$dark_charcoal;
-  color: variables.$white;
+  background: $dark_charcoal;
+  border: 1px solid $dark_charcoal;
+  color: $white;
 }
 
 .primary:hover {
-  background-color: variables.$eerie_black;
-  border: 1px solid variables.$eerie_black;
+  background-color: $eerie_black;
+  border: 1px solid $eerie_black;
 }
 
 .danger {
-  background: variables.$vermilion;
-  border: 1px solid variables.$vermilion;
-  color: variables.$white;
+  background: $vermilion;
+  border: 1px solid $vermilion;
+  color: $white;
 }
 
 .success {
-  background: #008060;
-  border: 1px solid variables.$spanish_viridian;
-  color: variables.$white;
+  background: $spanish_viridian;
+  border: 1px solid $spanish_viridian;
+  color: $white;
 }
 
 .warning {
-  background: variables.$maize;
-  border: 1px solid variables.$maize;
-  color: variables.$white;
+  background: $maize;
+  border: 1px solid $maize;
+  color: $white;
 }
 
 .disabled {
-  background: variables.$light_gray_2 !important;
-  border: 1px solid variables.$light_gray_2;
-  color: variables.$dark_charcoal;
+  background: $light_gray_2 !important;
+  border: 1px solid $light_gray_2;
+  color: $dark_charcoal;
 }
 
 /* size */
@@ -77,15 +77,15 @@
 
 /* type */
 .outline {
-  background: variables.$white;
-  color: variables.$dark_charcoal;
-  border: 1px solid variables.$silver_sand;
+  background: $white;
+  color: $dark_charcoal;
+  border: 1px solid $silver_sand;
 }
 
 .text {
   background: transparent;
   border: none;
-  color: variables.$dark_charcoal;
+  color: $dark_charcoal;
   display: inline-flex;
   width: auto;
   box-shadow: none !important;
@@ -93,18 +93,18 @@
 
 /* shadow */
 .isPressed {
-  box-shadow: variables.$button_shadow;
+  box-shadow: $button_shadow;
 }
 
 /* loading */
 .loading {
-  background: variables.$light_gray_2;
-  border: 1px solid variables.$light_gray_2;
+  background: $light_gray_2;
+  border: 1px solid $light_gray_2;
   padding: 0px 30px;
   box-sizing: border-box;
 }
 
-@include media.responsive(tablet) {
+@include responsive(tablet) {
   /* size */
   .button_sm {
     height: 32px;

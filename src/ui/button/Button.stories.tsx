@@ -27,5 +27,6 @@ export const Danger: Story = {
     children: "Danger",
     variant: "danger",
     size: "md",
+    loading: true,
   },
 };

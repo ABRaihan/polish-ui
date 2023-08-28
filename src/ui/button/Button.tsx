@@ -1,27 +1,18 @@
+import { Spinner } from "@ui/spinner";
 import { classNames } from "@utils";
 import React from "react";
+import { ButtonDefaultProps, ButtonProps } from "./ButtonTypes";
 import style from "./button.module.scss";
 
-interface ButtonProps {
-  children: React.ReactNode;
-  variant: "primary" | "danger" | "success" | "warning" | "disabled";
-  size: "sm" | "md" | "lg";
-  disabled: boolean;
-  loading: boolean;
-  display: "block" | "inline_block";
-  type: "normal" | "outline" | "text";
-  isPressed: boolean;
-  onClick: () => void;
-}
 const Button: React.FC<ButtonProps> = ({
   children,
-  loading = false,
+  loading,
   variant,
   size,
   type,
   display,
-  disabled = false,
-  isPressed = false,
+  disabled,
+  isPressed,
   onClick,
 }) => {
   const buttonClasses = classNames(
@@ -37,9 +28,18 @@ const Button: React.FC<ButtonProps> = ({
 
   return (
     <button className={buttonClasses} onClick={onClick} disabled={disabled}>
-      {children}
+      {loading ? <Spinner size={size} /> : children}
     </button>
   );
 };
+Button.defaultProps = ButtonDefaultProps;
+type ButtonWithoutProps = Omit<ButtonProps, keyof typeof Button.defaultProps>;
+type ButtonComponent = React.FC<ButtonWithoutProps> & {
+  defaultProps: Partial<ButtonWithoutProps>;
+};
 
-export default Button;
+const DefaultButton: ButtonComponent = Button as ButtonComponent;
+DefaultButton.defaultProps = {
+  ...Button.defaultProps,
+};
+export default DefaultButton;

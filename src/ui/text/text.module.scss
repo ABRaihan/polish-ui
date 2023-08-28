@@ -1,0 +1,149 @@
+@import "../../scss/mixins/media";
+@import "../../scss/variables";
+@import "../../scss/mixins/font";
+
+.paragraph {
+  @include font($fs_16, $fw_semiBold, $dark_charcoal, $space_24);
+  margin: $space_0;
+  padding: $space_0;
+}
+
+.font_sm {
+  @include font($fs_12, _, _, $space_20);
+}
+.font_md {
+  @include font($fs_12, _, _, $space_20);
+}
+.font_lg {
+  @include font($fs_13, _, _, $space_21);
+}
+.span {
+  @include font($fs_12, $fw_regular, $dark_charcoal, $space_20);
+  display: inline-block;
+}
+.link {
+  @include font($fs_12, $fw_regular, $true_blue, $space_20);
+  display: inline-block;
+}
+.link.hover:hover {
+  text-decoration: underline;
+}
+.h1 {
+  @include font($fs_20, _, _, $space_28);
+}
+.h2 {
+  @include font($fs_18, _, _, $space_26);
+}
+.h3 {
+  @include font($fs_16, _, _, $space_26);
+}
+.h4 {
+  @include font($fs_14, _, _, $space_22);
+}
+.h5 {
+  @include font($fs_12, _, _, $space_20);
+}
+.h6 {
+  @include font($fs_12, _, _, $space_20);
+}
+
+/* color */
+.primary {
+  color: $dark_charcoal !important;
+}
+.secondary {
+  color: $granite_gray !important;
+}
+.tertiary {
+  color: $nickel !important;
+}
+.subdued {
+  color: $white !important;
+}
+
+/* text decoration */
+.default {
+  text-decoration: none;
+}
+.line_through {
+  text-decoration: line-through;
+}
+.underline {
+  text-decoration: underline;
+}
+.overline {
+  text-decoration: overline;
+}
+.overline_underline_both {
+  text-decoration: underline overline;
+}
+
+/* truncate */
+.truncate {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* alignment */
+.start {
+  text-align: start;
+}
+.center {
+  text-align: center;
+}
+.end {
+  text-align: end;
+}
+.justify {
+  text-align: justify;
+}
+
+/* font weight */
+.regular {
+  font-weight: $fw_regular !important;
+}
+.medium {
+  font-weight: $fw_medium !important;
+}
+.semiBold {
+  font-weight: $fw_semiBold !important;
+}
+.bold {
+  font-weight: $fw_bold !important;
+}
+
+@include responsive(tablet) {
+  .font_md {
+    @include font($fs_13, _, _, $space_21);
+  }
+  .font_lg {
+    @include font($fs_16, _, _, $space_24);
+  }
+
+  /* heading */
+  .h1 {
+    @include font($fs_28, _, _, $space_36);
+  }
+  .h2 {
+    @include font($fs_24, _, _, $space_32);
+  }
+  .h3 {
+    @include font($fs_20, _, _, $space_28);
+  }
+  .h4 {
+    @include font($fs_16, _, _, $space_24);
+  }
+  .h5 {
+    @include font($fs_13, _, _, $space_21);
+  }
+  .h6 {
+    @include font($fs_13, _, _, $space_21);
+  }
+}
+@include responsive(laptop) {
+  .link {
+    cursor: pointer;
+  }
+}

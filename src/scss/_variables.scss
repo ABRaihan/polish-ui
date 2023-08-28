@@ -27,33 +27,30 @@
 * 
 * 
 **/
-
-
-
 /*=============================================
 =                   #Colors                   =
 =============================================*/
 
 /*  #__brand color__ */
-$primary_color: #0DA5FB;
-
+$brand_color: #0DA5FB;
 
 /*  #__Natural colors__ */
-$white: #ffffff;
-$dark_charcoal: #303030;
+$dark_charcoal: #303030; /* primary */
 $philippine_silver: #B9B3AE;
 $granite_gray: #616161;
 $nickel: #6D7175;
 $eerie_black: #1A1A1A;
 $light_gray_2: #D4D4D4;
 $silver_sand:#C3BEBA;
+$true_blue : #005BD3; /* link */
+$white: #ffffff;
 
 
 
 /*  #__Utility color__ */
-$spanish_viridian:#008060;
-$vermilion : #D82C0D;
-$maize:#FFC453;
+$spanish_viridian:#008060; /* success */
+$vermilion : #D82C0D; /* danger */
+$maize:#FFC453;/* warning */
 $light_gray: #D2D5D8;
 $philippine_gray: #8C9196;
 $lavender_blush : #FFF4F4;
@@ -68,13 +65,37 @@ $inter: 'Inter', sans-serif;
 
 
 /*  #__font sizes__ */
-$fs_xxsm: 12px;
-$fs_xsm: 13px;
-$fs_sm: 16px;
-$fs_md: 18px;
-$fs_lg: 20px;
-$fs_xlg: 24px;
-$fs_xxlg: 28px;
+$fs_10: 10px;
+$fs_11: 11px;
+$fs_12: 12px;
+$fs_13: 13px;
+$fs_14: 14px;
+$fs_14: 15px;
+$fs_16: 16px;
+$fs_17: 17px;
+$fs_18: 18px;
+$fs_19: 19px;
+$fs_20: 20px;
+$fs_21: 21px;
+$fs_22: 22px;
+$fs_23: 23px;
+$fs_24: 24px;
+$fs_25: 25px;
+$fs_26: 26px;
+$fs_27: 27px;
+$fs_28: 28px;
+$fs_29: 29px;
+$fs_30: 30px;
+$fs_31: 31px;
+$fs_32: 32px;
+$fs_33: 33px;
+$fs_34: 34px;
+$fs_35: 35px;
+$fs_36: 36px;
+$fs_37: 37px;
+$fs_38: 38px;
+$fs_39: 39px;
+$fs_40: 40px;
 
 
 
@@ -90,3 +111,52 @@ $fw_bold:700;
 =============================================*/
 /*  #__Shadow__ */
 $button_shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.30) inset, 0px 1px 0px 0px rgba(0, 0, 0, 0.08);
+$input_focus_shadow_color: rgba(0, 91, 211, 0.20);
+
+/*=============================================
+=                     #Space                  =
+=============================================*/
+
+$space_none:none;
+$space_0:0px;
+$space_1:1px;
+$space_2:2px;
+$space_3:3px;
+$space_4:4px;
+$space_5:5px;
+$space_6:6px;
+$space_7:7px;
+$space_8:8px;
+$space_9:9px;
+$space_10:10px;
+$space_11:11px;
+$space_12:12px;
+$space_13:13px;
+$space_14:14px;
+$space_15:15px;
+$space_16:16px;
+$space_17:17px;
+$space_18:18px;
+$space_19:19px;
+$space_20:20px;
+$space_21:21px;
+$space_22:22px;
+$space_23:23px;
+$space_24:24px;
+$space_25:25px;
+$space_26:26px;
+$space_27:27px;
+$space_28:28px;
+$space_29:29px;
+$space_30:30px;
+$space_31:31px;
+$space_32:32px;
+$space_33:33px;
+$space_34:34px;
+$space_34:34px;
+$space_35:35px;
+$space_36:36px;
+$space_37:37px;
+$space_38:38px;
+$space_39:39px;
+$space_40:40px;
