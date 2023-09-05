@@ -34,6 +34,8 @@
     "build-storybook": "storybook build"
   },
   "devDependencies": {
+    "@rollup/plugin-alias": "^5.0.0",
+    "@rollup/plugin-image": "^3.0.2",
     "@rollup/plugin-terser": "^0.4.3",
     "@storybook/addon-essentials": "7.3.2",
     "@storybook/addon-interactions": "7.3.2",
